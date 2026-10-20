@@ -49,3 +49,12 @@ When a sales officer sells an A4 exercise book:
 5. The system generates the required document.
 6. The transaction becomes available for reporting.
 
+## Request-response flow
+
+1. A user interacts with React.
+2. React sends an HTTP request to Laravel.
+3. Laravel validates the request.
+4. Laravel applies business rules.
+5. Laravel reads or writes PostgreSQL data.
+6. Laravel returns a JSON response.
+7. React displays the result.
