@@ -58,3 +58,14 @@ When a sales officer sells an A4 exercise book:
 5. Laravel reads or writes PostgreSQL data.
 6. Laravel returns a JSON response.
 7. React displays the result.
+
+## Example retail event
+
+When a sales officer sells an A4 exercise book:
+
+1. The sale is submitted through the application.
+2. Laravel validates the product and quantity.
+3. The sale and sale item are recorded.
+4. Inventory is reduced.
+5. The system generates the required document.
+6. The transaction becomes available for reporting.
