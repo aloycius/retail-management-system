@@ -2,16 +2,16 @@
 
 namespace App\Modules\Identity\Models;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
-use App\Modules\Identity\Models\Role;
-Role::create(['name' => 'owner']);
-Role::all();
-Role::create(['name' => 'owner']);
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Role extends Model
 {
-    //defining the Role model
-    protected $fillable = [ 'name'];
+    protected $fillable = ['name'];
+
+    public function users(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class);
+    }
 }
-
-
