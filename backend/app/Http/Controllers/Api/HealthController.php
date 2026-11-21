@@ -3,17 +3,15 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class HealthController extends Controller
 {
     public function index()
     {
-        return response ()->json([
+        return response()->json([
             'status' => 'healthy',
             'service' => 'Retail Management System API',
-            'message' => 'Backend is ready for development'
-            ]);
+            'message' => 'Backend is ready for development',
+        ]);
     }
 }
-
